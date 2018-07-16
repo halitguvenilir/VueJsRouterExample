@@ -1,0 +1,12 @@
+// Owl Carousel
+.owl-carousel {
+
+    .owl-item {
+        transform: translateZ(0);
+
+        img {
+            display: inline-block;
+            width: auto;
+        }
+    }
+}

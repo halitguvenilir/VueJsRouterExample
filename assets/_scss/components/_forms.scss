@@ -1,0 +1,14 @@
+input, select, textarea {
+    background: transparent;
+    border: 2px dotted #fff;
+    padding: 5px 10px;
+
+    &:focus {
+        outline: 0;
+        border-color: #999;
+    }
+
+    @include placeholder() {
+        color: #fff;
+    }
+}
