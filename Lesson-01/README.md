@@ -1,4 +1,4 @@
-# vuejs
+# lesson-01
 
 > A Vue.js project
 

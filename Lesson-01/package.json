@@ -1,8 +1,8 @@
 {
-  "name": "vuejs",
+  "name": "lesson-01",
   "description": "A Vue.js project",
   "version": "1.0.0",
-  "author": "Halit Güvenilir <halitguvenilir@gmail.com>",
+  "author": "Halit <halitguvenilir@gmail.com>",
   "license": "MIT",
   "private": true,
   "scripts": {
