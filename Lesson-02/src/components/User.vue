@@ -1,10 +1,12 @@
 <template>
     <div class="user">
-        <p>Name: {{ user.name }}</p>
-        <p>E-Mail: {{ user.email }}</p>
-        <p>Phone: {{ user.phone }}</p>
-        <p>Username: {{ user.username }}</p>
-        <p>Website: {{ user.website }}</p>
+        <router-link :to="userLink">
+            <p>Name: {{ user.name }}</p>
+            <p>E-Mail: {{ user.email }}</p>
+            <p>Phone: {{ user.phone }}</p>
+            <p>Username: {{ user.username }}</p>
+            <p>Website: {{ user.website }}</p>
+        </router-link>
     </div>
 </template>
 
@@ -14,6 +16,11 @@
         props: {
             user: {
                 type: Object, required: true
+            }
+        },
+        computed: {
+            userLink() {
+                return `/user/${this.user.id}`
             }
         }
     }
